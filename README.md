@@ -1,7 +1,7 @@
 # About 
 
 ## ballchasing.com
-[Ballchasing](https://ballchasing.com) is a repository consisting of over 130 million [Rocket League](https://www.rocketleague.com/en) replay files that record more than 650 million minutes of gameplay time. These files allow players to save and re-watch full replays of matches played in-game using the game client. With the [ballchasing API](https://ballchasing.com/doc/api), users can 
+[Ballchasing](https://ballchasing.com) is a repository of over 130 million [Rocket League](https://www.rocketleague.com/en) replay files that record more than 650 million minutes of gameplay time. These files allow players to save and re-watch full replays of matches played in-game using the game client. With the [ballchasing API](https://ballchasing.com/doc/api), users can 
 - download, upload, delete, and patch replays, 
 - create replay groups to organize collections of replays in a tree-like structure, and 
 - access basic information and statistics about replays or replay groups. 
@@ -28,7 +28,7 @@ Alternatively, you can pass the key directly into the initializer:
 bc = BallchasingAPI("my_api_key")
 ```
 
-The API key is stored as an instance variable `self.api_key` in each class instance; once initialized, users can make multiple calls to the API without manually re-authenticating, e.g.: 
+The API key is stored as an instance variable `self.api_key`. After a class instance is initialized with a valid key, users can make multiple calls to the API without manually re-authenticating, e.g.: 
 ```
 >>> bc.get_replay_info(replay_id)
 >>> bc.download_replay(replay_id)
